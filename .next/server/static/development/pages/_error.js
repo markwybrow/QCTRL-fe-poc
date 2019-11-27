@@ -93,6 +93,28 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/set.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/set.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/set */ "core-js/library/fn/set");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
@@ -120,7 +142,9 @@ module.exports = _interopRequireDefault;
 "use strict";
 
 
-var __importStar = void 0 && (void 0).__importStar || function (mod) {
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
   if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
@@ -128,7 +152,7 @@ var __importStar = void 0 && (void 0).__importStar || function (mod) {
   return result;
 };
 
-Object.defineProperty(exports, "__esModule", {
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -148,13 +172,15 @@ exports.AmpStateContext = React.createContext({});
 "use strict";
 
 
-var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
   };
 };
 
-Object.defineProperty(exports, "__esModule", {
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -191,7 +217,9 @@ exports.useAmp = useAmp;
 "use strict";
 
 
-var __importStar = void 0 && (void 0).__importStar || function (mod) {
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
   if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
@@ -199,7 +227,7 @@ var __importStar = void 0 && (void 0).__importStar || function (mod) {
   return result;
 };
 
-Object.defineProperty(exports, "__esModule", {
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -219,13 +247,17 @@ exports.HeadManagerContext = React.createContext(null);
 "use strict";
 
 
-var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
   };
 };
 
-Object.defineProperty(exports, "__esModule", {
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -286,9 +318,9 @@ const METATYPES = ['name', 'httpEquiv', 'charSet', 'itemProp'];
 */
 
 function unique() {
-  const keys = new Set();
-  const tags = new Set();
-  const metaTypes = new Set();
+  const keys = new _Set();
+  const tags = new _Set();
+  const metaTypes = new _Set();
   const metaCategories = {};
   return h => {
     if (h.key && typeof h.key !== 'number' && h.key.indexOf('.$') === 0) {
@@ -319,7 +351,7 @@ function unique() {
             metaTypes.add(metatype);
           } else {
             const category = h.props[metatype];
-            const categories = metaCategories[metatype] || new Set();
+            const categories = metaCategories[metatype] || new _Set();
             if (categories.has(category)) return false;
             categories.add(category);
             metaCategories[metatype] = categories;
@@ -381,7 +413,11 @@ exports.default = Head;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+var _Set = __webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -390,7 +426,7 @@ const react_1 = __webpack_require__(/*! react */ "react");
 const isServer = true;
 
 exports.default = () => {
-  const mountedInstances = new Set();
+  const mountedInstances = new _Set();
   let state;
 
   function emitChange(component) {
@@ -556,6 +592,28 @@ var styles = {
 
 module.exports = __webpack_require__(/*! next/dist/pages/_error */"./node_modules/next/dist/pages/_error.js");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/define-property":
+/*!************************************************************!*\
+  !*** external "core-js/library/fn/object/define-property" ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/set":
+/*!*****************************************!*\
+  !*** external "core-js/library/fn/set" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/set");
 
 /***/ }),
 

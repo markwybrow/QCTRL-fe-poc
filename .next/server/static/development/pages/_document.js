@@ -376,9 +376,12 @@ module.exports = _interopRequireWildcard;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
+
 exports.PHASE_EXPORT = 'phase-export';
 exports.PHASE_PRODUCTION_BUILD = 'phase-production-build';
 exports.PHASE_PRODUCTION_SERVER = 'phase-production-server';
@@ -424,7 +427,9 @@ exports.DEFAULT_REDIRECT_STATUS = 307;
 "use strict";
 
 
-var __importStar = void 0 && (void 0).__importStar || function (mod) {
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var __importStar = this && this.__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
   if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
@@ -432,7 +437,7 @@ var __importStar = void 0 && (void 0).__importStar || function (mod) {
   return result;
 };
 
-Object.defineProperty(exports, "__esModule", {
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -452,7 +457,11 @@ exports.DocumentContext = React.createContext(null);
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -544,7 +553,7 @@ async function loadGetInitialProps(App, ctx) {
   }
 
   if (true) {
-    if (Object.keys(props).length === 0 && !ctx.ctx) {
+    if (_Object$keys(props).length === 0 && !ctx.ctx) {
       console.warn(`${getDisplayName(App)} returned an empty object from \`getInitialProps\`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps`);
     }
   }
@@ -558,7 +567,7 @@ exports.urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pa
 function formatWithValidation(url, options) {
   if (true) {
     if (url !== null && typeof url === 'object') {
-      Object.keys(url).forEach(key => {
+      _Object$keys(url).forEach(key => {
         if (exports.urlObjectKeys.indexOf(key) === -1) {
           console.warn(`Unknown key passed via urlObject into url.format: ${key}`);
         }
