@@ -5,6 +5,8 @@ React, nextjs, json-server : FrontEnd Q-CTRL controls list loader poc with json-
 ## Setup
 Download then install with yarn install.
 
+- node v12.13.1 (npm v6.12.1)
+
 ```
 git clone using this URL https://github.com/markwybrow/fe-QCTRL.git
 
